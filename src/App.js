@@ -29,7 +29,7 @@ class App extends Component {
        {/* <CheckBox></CheckBox>
        <Splash></Splash> */}
     </main>
-     <Route path="/Checkbox" component={CheckBox} />
+     <Route path="/" component={CheckBox} />
     </Router>
     
   );
