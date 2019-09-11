@@ -7,22 +7,20 @@ class CheckBox extends Component {
     <div>
       <div className="CheckBoxes">
         <div className="checkedbox">
-          <input type="checkbox" value="All" id="checkedbox" name="checkbox"/><form>
-
-          </form>
-          CheckBoxes
+          <input type="checkbox" value="All" id="checkedbox" name="checkbox"/>
+          Sing the national anthem over your least favorite politician's debate reel. 
         </div>
       </div>
       <div className="CheckBoxes">
         <div className="checkedbox2">
             <input type="checkbox" value="All" id="checkedbox2" name="checkbox"/>
-            CheckBoxes 2
+            Run backwards while yodelling, because Beyonce swears by it. 
         </div>
       </div>
       <div className="CheckBoxes">
         <div className="checkedbox3">
           <input type="checkbox" value="All" id="checkedbox3" name="checkbox"/>
-          CheckBoxes 3
+          Drink a shot of pickle juice. This is helpful for cleaning your tongue.
         </div>
       </div>
     </div>
