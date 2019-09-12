@@ -13,8 +13,11 @@ class App extends Component {
   componentDidMount() {
     setTimeout(() => {
       this.setState({splash: false});
-    }, 1000); // 1000ms = 2 second
+    }, 2000); // 1000ms = 1 second
   }
+ // toggle to ask backend for three items at random and return
+ // submit to send to next page
+ // show how many tasks were completed 
   render(){
     if(this.state.splash) {
       return ( <Splash></Splash>
