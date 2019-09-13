@@ -9,4 +9,15 @@ export default class Task extends Component {
         };
         this.clickHandle = this.clickHandle.bind(this)
     }
+    componentDidMount() {
+        fetch(
+          
+        )
+          .then(response => response.json())
+          .then(data => {
+            this.setState({
+              data: data,
+            });
+          });    
+      }
 }

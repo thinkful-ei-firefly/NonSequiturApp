@@ -29,15 +29,20 @@ class App extends Component {
     <Router>
     <main className='App'>
        <p> NonSequitur Application </p>
-       {/* <CheckBox></CheckBox>
-       <Splash></Splash> */}
+       <button aria-live="polite" class="submit">Crushed It</button>
     </main>
      <Route path="/" component={CheckBox} />
     </Router>
     
   );
 }
+/* $('main').on('submit', function () {
+  event.preventDefault();
+  checkQuestion();
+)} */
 }
+
+
 
 
 export default App;
