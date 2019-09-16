@@ -5,7 +5,7 @@ export default class Splash extends Component {
     render() {
         return(
             <div id='Splashwrapper'>
-                <img src={logo512} alt='reactlogo'></img>
+                <img src={logo512} alt='nonsequiturlogo'></img>
             </div>
         );
     }

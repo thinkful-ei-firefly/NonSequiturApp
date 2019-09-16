@@ -16,7 +16,6 @@ class App extends Component {
     }, 2000); // 1000ms = 1 second
   }
  // toggle to ask backend for three items at random and return
- // submit to send to next page
  // show how many tasks were completed 
   render(){
     if(this.state.splash) {
@@ -29,7 +28,7 @@ class App extends Component {
     <Router>
     <main className='App'>
        <p> NonSequitur Application </p>
-       <button aria-live="polite" class="submit">Crushed It</button>
+       <button aria-live="polite" class="submit">Crushed It</button> {/* submit button to send to next page */}
     </main>
      <Route path="/" component={CheckBox} />
     </Router>
