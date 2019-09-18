@@ -2,6 +2,8 @@
   "name": "nonsensical-application",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:3000",
+
   "dependencies": {
     "now": "^16.2.0",
     "react": "^16.9.0",

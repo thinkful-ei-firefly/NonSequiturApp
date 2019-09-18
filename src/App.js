@@ -7,8 +7,14 @@ class App extends Component {
   constructor(){
     super()
     this.state={
-      splash: true
+      splash: true,
+      count: 0,
     }
+  }
+  increaseCount = () => {
+   let newCount = this.state.count
+   newCount = newCount + 1
+   this.setState({count:newCount})
   }
   componentDidMount() {
     setTimeout(() => {
@@ -27,8 +33,10 @@ class App extends Component {
   return (
     <Router>
     <main className='App'>
+      <label aria-live="polite" className="taskcount">Completed:{this.state.count}</label>
        <p> NonSequitur Application </p>
-       <button aria-live="polite" className="submit">Crushed It</button> {/* submit button to send to next page */}
+       <button aria-live="polite" 
+                onClick={this.increaseCount} className="submit">Crushed It</button> 
     </main>
     <Route path="/" component={CheckBox} />
     </Router>
