@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Splash from './components/Splash/Splash';
 import CheckBox from './components/CheckBoxes/Checkbox';
 import { BrowserRouter as Router, Route} from "react-router-dom";
+import './index.css';
 
 class App extends Component {
   constructor(){

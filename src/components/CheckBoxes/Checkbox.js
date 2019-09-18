@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Checkbox';
+import './Checkboxes.css';
 
 class CheckBox extends Component {
   constructor(){
@@ -32,11 +33,11 @@ class CheckBox extends Component {
 
   render() {
     return (
-      <div>
-        <p><label>Question 1: </label> <input type="checkbox" value={this.state.q1}/>{this.state.q1} </p>
-        <p><label>Question 2: </label> <input type="checkbox" value={this.state.q2}/>{this.state.q2} </p>
-        <p><label>Question 3: </label> <input type="checkbox" value={this.state.q3}/>{this.state.q3} </p>
-        <p><label>Question 4: </label> <input type="checkbox" value={this.state.q4}/>{this.state.q4} </p>
+      <div id="boxes" class="boxes"> 
+        <p class="one"><label>Question 1: </label> <input type="checkbox" value={this.state.q1}/>{this.state.q1} </p>
+        <p class="two"><label>Question 2: </label> <input type="checkbox" value={this.state.q2}/>{this.state.q2} </p>
+        <p class="three"><label>Question 3: </label> <input type="checkbox" value={this.state.q3}/>{this.state.q3} </p>
+        <p class="four"><label>Question 4: </label> <input type="checkbox" value={this.state.q4}/>{this.state.q4} </p>
       </div>
       )}
 }
